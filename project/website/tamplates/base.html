@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- Favicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="/static/img/logo.png" type="image/icon type">
+
+    <meta name="theme-color" content="#712cf9" />
+    <title>
+      Veracious market research | {% block title %}{% endblock title %}
+    </title>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <div class="first">
+          <div class="logo">
+            <img src="/static/img/Project_4-removebg-preview (1).png" alt=""/>
+          </div>
+          <nav data-aos="zoom-out-up" data-aos-delay="1000" class="navbar navbar-expand-lg">
+            <div class="container">
+              <button class="navbar-toggler mx-4 my-0" id="Mybutton" type="button" onclick="clickbutton" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/product">What we offer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/overview">Overview</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="/service" id="navbarDropdownMenuLink">
+                      Service
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="/service#quantitative">Quantitative research</a></li>
+                      <li><a class="dropdown-item" href="/service#qualitative">Qualitative research</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="/about" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                    </a>
+                    <ul class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="/about#team">Our Team</a></li>
+                      <li><a class="dropdown-item" href="/about#vision">Our Vision</a></li>
+                      <li><a class="dropdown-item" href="/about#capability">Our Capabilities</a></li>
+                      <li><a class="dropdown-item" href="/about#mission">Our Mission</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div data-aos="slide-up
+          " class="pannel">
+            <button>Join our pannel</button>
+          </div>
+        </div>
+       
+        <!-- <div class="earning"  data-aos="zoom-out-up" data-aos-offset="200" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <h1>Want to Earn??</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, asperiores.</p>
+          <p>Click this <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+        </p>
+        </div> -->
+      </header>
+    </div>
+    <main>
+      <section1 class="image">
+        <div class="container1"  style="padding-left: 0 !important; padding-right: 0 !important;">
+          {% block image %} {% endblock image %}
+          <div class="overlay1">
+            <div class="content-details">
+              <div class="text">{% block text %} {% endblock text %}</div>
+            </div>
+          </div>
+        </div>
+      </section1>
+      {% block part1 %} {% endblock part1 %}
+
+      {% block part2 %} {% endblock part2 %}
+
+    {% block cards %}{% endblock cards %}
+    <div class="container-fluid" data-aos="slide-left">
+    <div class= 'container-third' >
+      <div class="container_content">
+      <div class="container_content_inner">
+      <div class="title1">
+        <h1 data-aos="slide-up">Hello World</h1>
+      </div>
+      <div class="par">
+      <p data-aos="slide-up">
+      Cupiditate alias odio omnis minima veritatis saepe porro, repellendus natus vitae, sequi exercitationem ipsam, qui possimus sit eveniet laborum sapiente quisquam quae neque velit? 
+      </p>
+      </div>
+      <div class="btns">
+      <button class='btns_more' data-aos="slide-up"> See more </button>
+      </div>
+      </div>
+      </div>
+       <div class="container_outer_img">
+       <div class="img-inner">
+       <img src='/static/img/CEO.jpg'  alt="" class="container_img" data-aos="ease-out"/>
+             </div>
+           </div>
+        </div>
+      <div class="overlay"></div>
+    </div>
+
+
+    <div class="logos">
+      <div class="updown">
+        <div class="img">
+          <img src="/static/img/logo1.png" alt="">
+        </div>
+        <div class="text">
+          <p>Citizen-engagement</p>
+        </div>
+      </div>
+      <div class="updown">
+        <div class="img">
+          <img src="/static/img/logo-2.png" alt="">
+        </div>
+        <div class="text">
+          <p>Citizen-engagement</p>
+        </div>
+      </div>
+      <div class="updown">
+        <div class="img">
+          <img src="/static/img/logo-3.png" alt="">
+        </div>
+        <div class="text">
+          <p>Citizen-engagement</p>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" onclick="topFunction()" id="myBtn" title="Go to top" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+    </svg>
+    </main>
+    <div class="container1 bg-white align-items-center border" style="width: 100vw; padding: 1rem;">
+      <footer class="py-2">
+        <div class="row">
+          <div class="col col-2 col-md-3 mb-3 ms-5">
+            <h5>Our Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">PAPI</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">CAWI</a>
+              </li>
+              <br />
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted"
+                  >Brand loyalty <br />Cusomter Satifation Research</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted"
+                  >HealthCare research</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">CAPI</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Minigroups</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-6 col-md-4 mb-3 my-4"
+            style="border-right: 1px solid black"
+          >
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Retail Audits</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Ethnography</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Usage, Image and Attitude <br> Consumer Research</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">In-Depth Interviews</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Focus Group Discussions</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">CATI</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Mystery Shopping</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class=" contact row-cols-lg-8 col-md-2 mb-3 my-4"
+            style="border-left: 1px solid black"
+          >
+            <h2>Contact US</h2>
+            <ul class="nav flex-column">
+              <li class="d-flex flex-row nav-item mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <a href="#" class="nav-link mx-1 p-0 text-muted"
+                  >Veracious Market Research</a
+                >
+              </li>
+              <li class="d-flex flex-row nav-item mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg>
+                <a href="#" class="nav-link mx-1 p-0 text-muted"
+                  >info@veraciousmarketresearch.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="social d-flex flex-column flex-sm-row justify-content-between py-1 border-top position-relative"
+        >
+          <p class="ms-5">&copy; 2022 Company, Inc. All rights reserved.</p>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/j_query.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+  </script>
+  </body>
+</html>

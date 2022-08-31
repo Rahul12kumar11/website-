@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block image %}
+  <img src="/static/img/frontimg1.png" class = image alt="A image">
+{% endblock image %}
+{% block text %}
+  <div class="box">
+    <h1>Veracious market research</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur placeat doloribus cum voluptates possimus alias? Fugit odit maxime corporis error?</p>
+    <div class="btn btn-dark"> <a href="/" style="text-decoration: none; color: white;">Join Our pannel</a></div>
+  </div>
+{% endblock text %}
+
+{% block part1 %}
+<div class="text-row">
+  <div class="part p-2">
+    <p>
+      We will not mix up things and instead involve in developing new concepts, tools, techniques, and methodologies for both quantitative and qualitative research. Our customary pattern of thoughts is innovative, and it is supported by cumulative deposit of knowledge, notions of time and values of creativity, uncompromisable teamwork, and partnership as well as training in value based behavioural sciences and the psychometrics. 
+    </p>
+
+  </div>
+  <div class="part p-2"">
+    <p>
+      Whereas many companies focus on targeting analysis which are complex, but we are more focused on collecting quality data as this is in principle very clear to deliver actionable research insights to our clients.
+      <br><br>
+      We design innovative and customized solutions to deliver the benchmarking insights and deep dive findings to our clients that they need.
+      <br> <br>
+      <b> For more information: Please write to us. --></b>
+    </p>
+  </div>
+  <div class="part p-2"">
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="mb-1">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input type="name" placeholder="Write Your Name Here....." name="name" value="{{ name }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-1">
+        <label for="exampleInputEmail1" class="form-label">Phone</label>
+        <input type="phone" name="phone" placeholder="Write Your Phone Number Here....." value="{{ phone }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-1">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" name="email"placeholder="Write Your Email Here....." value="{{ email }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-1">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" placeholder="Write A Message....." value="{{ message }}" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Let's Talk</button>
+    </form>
+  </div>
+</div>
+{% endblock part1 %}
+{% block part2 %}
+
+<div class="section2 flex-column bg-black text-white px-5 py-5 d-block">
+  <div class="main-content container">
+  <h1 data-aos="slide-left">Veracious market research</h1>
+  <p data-aos="slide-left">
+    Veracious Market Research (VMR) is known for its commitments to its clients with an experience of 100 plus niche experiences in the field of Market Research. We have always been coming up to our client's expectations year after year. Our team is well versed in Market Research Techniques and always keen to do better with no compromises whatsoever. We, at VMR, are always on our toes to deliver the task assigned to us in a stipulated period. To achieve the benchmarks, we are committed to working round the clock. Our team is capable of identifying the key issues, developing the approach to resolve them, researching the design, collecting & analyzing the data, and preparing the report, & our impeccable & deep-dive research insights take required action accordingly in your businesses.
+  </p>
+</div>
+</div>
+{% endblock part2 %}
+
+<div class="cards1 my-4 container">
+  <div class="card">
+    <img src="/static/img/Citizen-engagement.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title"><a href="/service#quantitative" class="text-decoration-none text-black">Quantitative research</a></h5>
+      <p class="card-text">
+        Veracious Market Research (VMR) is committed to working 24/7 for its clients and providing reliable, accurate, and relevant insights using various online and offline based tools and techniques. </p>
+    </div>
+  </div>
+  {% block cards %}
+  <div class="cards1 my-4 container">
+    <div class="card">
+      <img src="/static/img/Citizen-engagement.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title"><a href="/service#quantitative" class="text-decoration-none text-black">Quantitative research</a></h5>
+        <p class="card-text">
+          Veracious Market Research (VMR) is committed to working 24/7 for its clients and providing reliable, accurate, and relevant insights using various online and offline based tools and techniques. </p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img src="/static/img/Deep Analysis.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title"><a href="/service#qualitative" class="text-decoration-none text-black">Qualitative research</a></h5>
+        <p class="card-text">
+          Veracious Market Research (VMR) offers the best qualitative research reports by exploring the right audiences of different regions, communities, behavior, and perceptions.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/static/img/Earn Money.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title"><a href="#" class="text-decoration-none text-black">Online research</a></h5>
+        <p class="card-text">
+          Veracious Market Research (VMR) researchers are well versed in conducting impactful Online Market Research, using social media tools, which revolutionized the traditional aspect of market research.
+        </p>
+
+      </div>
+    </div>
+    <div class="card">
+      <img src="/static/img/Our Reach Worldwide.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title"><a href="#" class="text-decoration-none text-black">Our pannel</a></h5>
+        <p class="card-text">
+          Veracious Market Research (VMR) intends to provide the best products to our clients as per their needs which can be comprehensive and tailored made
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock cards %}
+
+
+
